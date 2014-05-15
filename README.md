@@ -29,21 +29,7 @@ run_analysis performs the following steps in order to produce the tidy dataset:
 
 The format of 'tidy' is as follows:
 
-> tidy[1:5,1:5]
-  activity subject tBodyAccmeanX tBodyAccmeanY tBodyAccmeanZ
-1   LAYING       1     0.2215982   -0.04051395    -0.1132036
-2   LAYING       2     0.2813734   -0.01815874    -0.1072456
-3   LAYING       3     0.2755169   -0.01895568    -0.1013005
-4   LAYING       4     0.2635592   -0.01500318    -0.1106882
-5   LAYING       5     0.2783343   -0.01830421    -0.1079376
+'tidy' contains 180 rows (6 activities x 30 subjects), sorted by 'activity' (alphabetically) and then 'subject'. 'activity' is the activity name, and 'subject' is the subject number.
 
-'tidy' contains 180 rows (6 activities x 30 subjects).
-'tidy' contains 81 columns: activity, subject, and 79 signal features.
-
-> nrow(tidy)
-[1] 180
-> ncol(tidy)
-[1] 81
-
-
+'tidy' contains 81 columns in the following order: activity, subject, and 79 signal features. For each combination of activity and subject, the value listed for each signal feature is the mean of all readings of that signal feature for that combination of activity and subject.
 
